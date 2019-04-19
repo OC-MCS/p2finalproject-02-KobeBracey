@@ -1,9 +1,8 @@
-//=========================================================
-// This is just the starting point for your final project.
-// You are expected to modify and add classes/files as needed.
-// The code below is the original code for our first graphics
-// project (moving the little green ship). 
-//========================================================
+//====================================
+// Kobe Bracey						 
+// 4/19/19							 
+// Final Project
+//====================================
 #include <iostream>
 using namespace std;
 #include <SFML/Graphics.hpp>
@@ -18,11 +17,6 @@ using namespace sf;
 #include "Bomb.h"
 #include "BombGroup.h"
 #include "UI.h"
-
-//============================================================
-// YOUR HEADER WITH YOUR NAME GOES HERE. PLEASE DO NOT FORGET THIS
-//============================================================
-
 
 GameStateEnum resetState(int lives, int &destroyedAliens, GameStateEnum currentState, EnemyGroup &enemys);
 

@@ -19,12 +19,12 @@ public:
 			cout << "Unable to load enemy texture!" << endl;
 			exit(EXIT_FAILURE);
 		}
-		enemy.setTexture(tex); //set the Alien's texture to the same texture passed by reference
-		enemy.setPosition(pos.x, pos.y); //set the Alien's position to the position handed to the constructor
+		enemy.setTexture(tex);
+		enemy.setPosition(pos.x, pos.y);
 	}
 	void moveEnemy()
 	{
-		const float DIST = 0.5f; //(will move 0.2 pixles every 60th of a second)
+		const float DIST = 0.5f;
 		enemy.move(0, DIST);
 	}
 

@@ -65,8 +65,7 @@ public:
 		list<Enemy>::iterator iter;
 		for (iter = enemyList.begin(); iter != enemyList.end(); iter++)
 		{
-			//window.draw(iter->getSprite());
-			iter->drawEnemy(window); //what is the syntax for drawing one of the aliens in the list
+			iter->drawEnemy(window);
 		}
 	}
 
@@ -107,14 +106,12 @@ public:
 			}
 			else
 			{
-				enemyIter++; //move to the next thing in the list
+				enemyIter++;
 			}
 		}
 	}
 
-	//determind if the list is empty
-	//Parameters: none
-	//Returns: bool (is the list empty)
+
 	bool isListEmpty()
 	{
 		bool isEmpty = false;
